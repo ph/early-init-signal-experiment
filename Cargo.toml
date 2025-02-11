@@ -1,6 +1,9 @@
 [package]
 name = "earlyd"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+signal-hook = { version= "0.3.17", features = ["extended-siginfo"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
