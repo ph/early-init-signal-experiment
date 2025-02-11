@@ -8,7 +8,6 @@ run: ## - build application and docker image.
 	$(DOCKER_BIN) rm -f $(IMAGE_NAME)
 	$(DOCKER_BIN) build -t $(IMAGE_TAG) . && $(DOCKER_BIN) run -it --name $(IMAGE_NAME)  $(IMAGE_TAG)
 
-
 ## zombie: build and run
 .PHONY: zombie
 zombie: ## - build the zombie-maker
